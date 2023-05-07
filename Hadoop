@@ -1,0 +1,35 @@
+Objectjava.net.URL= reading contents->file
+setURLStreamHandlerFactory= java recognize the hdfs
+
+=hdfs dfs -help 
+=dfs shell, supports multiple subcmds
+
+= copy LFS to hdfs
+.hdfs dfs -copyFromLocal temp.txt
+.hdfs dfs -ls /
+
+= copy hdfs to LFS
+.hdfs dfs -copyToLocal /temp.txt
+
+= create a new dir
+.hdfs dfs -mkdir /mydir
+
+
+
+MAPREDUCE: framework and programming model used for processing huge amount of data.
+=2 phases Map and Reduce
+= Map->Splitting, Mapping the data
+= Reduce -> Shuffle and reduce the data
+
+=input (key,value)
+= 4 Splitting,Mapping,Shuffling and Reducing
+
+=InputSplit: chucks of the input
+=Mapping: each split is passed to a mapping function to produce o/p , count num of occurrences of each word
+=Shuffling:words shuffled, sorted
+=Reducing
+
+=JobTracker:act liker master(complete exec of submitted job)
+=Multiple tasktacker: acts like slaves(perform the job)
+
+
